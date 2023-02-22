@@ -1,0 +1,51 @@
+$body-bg: #ffffff;
+$body-color: #324050;
+$primary: #00AEEF;
+$secondary: #0050A3;
+$dark: #101E2D;
+$danger: #f85135;
+$success: #70BF44;
+$warning: #ff9800;
+$info: #1c90d2;
+$light: #B5C5D6;
+$teal: #2fa584;
+$white: #fff;
+$gray-100: #a9a9a9;
+$gray-600: #3a3a3a;
+$soft-light: #F1F8FF; 
+$orange: #FA8657; 
+// TYPOGRAPHY
+$text-xs: .75rem;
+$text-sm: .875rem;
+$text-base : clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+$text-md: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+$text-lg: clamp(1.05rem, -0.1034rem + 2.406vw, 1.375rem);
+$text-xl: clamp(1.25rem, -0.1917rem + 3.0075vw, 1.563rem);
+$text-2xl: clamp(1.5rem, -0.6626rem + 4.5113vw, 1.875rem);
+$text-3xl: clamp(1.875rem, -1.7293rem + 7.5188vw, 2.5rem);
+$text-4xl: clamp(2rem, -4.4878rem + 13.5338vw, 3.125rem); 
+$text-5xl: clamp(3rem, -1.3252rem + 9.0226vw, 4.375rem);
+$text-6xl: clamp(4rem, 0.15rem + 7vw, 4.75rem);
+// FONT-WEIGHT
+$font-thin: 100;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 700; 
+
+$font-primary: -apple-system,
+    BlinkMacSystemFont,
+    "Poppins",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "Liberation Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";

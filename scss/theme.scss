@@ -1,0 +1,151 @@
+@import "theme/variables";
+@import "theme/mixin";
+
+.font-primary {
+    font-family: $font-primary;
+}
+
+.text-xs {
+    font-size: $text-xs;
+}
+
+.text-sm {
+    font-size: $text-sm;
+}
+
+.text-base {
+    font-size: $text-base;
+}
+
+.text-lg {
+    font-size: $text-lg;
+}
+
+.text-xl {
+    font-size: $text-xl;
+}
+
+.text-2xl {
+    font-size: $text-2xl;
+}
+
+.text-3xl {
+    font-size: $text-3xl;
+}
+
+.text-4xl {
+    font-size: $text-4xl;
+}
+
+.text-5xl {
+    font-size: $text-5xl;
+}
+
+.text-6xl {
+    font-size: $text-6xl;
+
+}
+
+.font-thin {
+    font-weight: $font-thin
+}
+
+.font-light {
+    font-weight: $font-light
+}
+
+.font-normal {
+    font-weight: $font-normal
+}
+
+.font-medium {
+    font-weight: $font-medium
+}
+
+.font-semibold {
+    font-weight: $font-semibold
+}
+
+.font-bold {
+    font-weight: $font-bold
+}
+
+.font-extrabold {
+    font-weight: $font-extrabold
+}
+
+.font-black {
+    font-weight: $font-black
+}
+
+.bg-soft-light {
+    background-color: $soft-light
+}
+.bg-orange{
+    background-color: $orange;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.title {
+    .title-text {
+        font-size: $text-3xl;
+        color: $dark;
+        font-style: normal;
+    }
+
+    .sub-title-text {
+        font-size: $text-xl;
+        font-style: italic;
+        font-weight: 500;
+        color: $success;
+        position: relative;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        span {
+            display: inline-block;
+            background-color: $success;
+            width: 50%;
+            max-width: 280px;
+            height: 2px;
+            margin-left: 20px;
+            margin-top: 5px;
+
+            @include for-size(mobile) {
+                width: 30%;
+            }
+        }
+    }
+}
+
+.row-divider>div:not(:first-child) {
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.row-divider-light>div:not(:first-child) {
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.owl-carousel {
+
+    .owl-stage{
+        display: flex;
+        .item {
+            height: 100%;
+        > div{
+            height: 100%
+        }        }
+    }
+
+}
+@import "theme/header";
+@import "theme/banner";
+@import "theme/clients";
+@import "theme/features";
+@import "theme/services";
+@import "theme/statistics";
+@import "theme/qualities"; 
+@import "theme/footer";    

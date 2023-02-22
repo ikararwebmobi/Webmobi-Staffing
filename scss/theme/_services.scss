@@ -1,0 +1,55 @@
+.services-wrappper {
+    background-color: $soft-light;
+    .service-card{
+        position: relative;
+        z-index: 2;
+        &::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: $primary;
+            transition: all .5s ease-in-out 0s;
+            transform-origin: bottom center;
+            transform: scaleY(0);
+            z-index: -1;
+            border-radius: 50% 50% 0 0;
+        }
+        .service-subtitle,.service-para,a.text-secondary{
+            transition: all .5s ease-in-out 0s;
+        }
+        &:hover{
+            &::before{
+                transform: scaleY(1);
+            }
+            .service-subtitle,.service-para,a.text-secondary{
+                color: $white !important;
+            }
+        }
+    }
+
+    .services-carousel-pagination {
+        .owl-dot {
+            padding: 0;
+            margin: 0 .25rem 0 0;
+            background-color: transparent;
+            border: 0;
+            span {
+                width: 10px;
+                height: 10px;
+                margin: 5px 0;
+                background: $light;
+                display: inline-block;
+                transition: opacity .2s ease;
+                border-radius: 30px;
+            } 
+
+            &.active{
+                span{
+                    background-color: $secondary;
+                }
+            }
+            
+        }
+    }
+} 

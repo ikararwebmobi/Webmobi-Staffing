@@ -1,0 +1,63 @@
+@mixin font-face($font-name, $font-path,
+
+  $font-weight: 400, $font-style: normal, $support-required: 'modern') {
+  @font-face {
+    font-family: $font-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+
+    @if $support-required=='oldie' {
+      src: url('#{$font-path}.eot');
+      src: url('#{$font-path}.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}.woff2') format('woff2'),
+      url('#{$font-path}.woff') format('woff'),
+      url('#{$font-path}.ttf') format('truetype'),
+      url('#{$font-path}.svg') format('svg');
+    }
+
+    @if $support-required=='recent' {
+      src: url('#{$font-path}.woff2') format('woff2'),
+      url('#{$font-path}.woff') format('woff'),
+      url('#{$font-path}.ttf') format('truetype');
+    }
+
+    @if $support-required=='modern' {
+      src: url('#{$font-path}.woff2') format('woff2'),
+      url('#{$font-path}.woff') format('woff');
+    }
+  }
+
+  @if $support-required !='oldie' and $support-required !='recent' and $support-required !='modern' {
+    @error 'Invalid support-required value. Must be "oldie"==>IE8 and above/ Android native browser 4+/ Safari 4.3 OR "recent"==>IE9+/ Android native browser 4.0+/ Safari 4.3+ OR "modern"==>IE9+/ Android native browser 4.4+/ Safari 5.1+';
+  }
+}
+
+// Poppins
+
+@include font-face("Poppins", "../fonts/poppins-thin", 100, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-thinitalic", 100, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-extralight", 200, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-extralightitalic", 200, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-light", 300, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-lightitalic", 300, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-regular", 400, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-italic", 400, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-medium", 500, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-mediumitalic", 500, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-semibold", 600, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-semibolditalic", 600, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-bold", 700, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-bolditalic", 700, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-extrabold", 800, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-extrabolditalic", 800, italic, "oldie");
+
+@include font-face("Poppins", "../fonts/poppins-black", 900, normal, "oldie");
+@include font-face("Poppins", "../fonts/poppins-blackitalic", 900, italic, "oldie");
+

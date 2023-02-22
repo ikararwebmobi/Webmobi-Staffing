@@ -1,0 +1,90 @@
+.banner-wrapper {
+    position: relative;
+    background: $primary;
+    background-image: url(../../images/background/banner-bg.png),  linear-gradient(286.89deg, #007ADF 11.23%, #00ECBC 125.78%);
+    background-size: cover;
+
+    @include for-size(lg){
+        &:before{
+            content:"";
+            background-color: $white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top:0;
+            width: 100%;
+            clip-path: polygon(0% 60%, 100% 90%, 100% 100%, 0% 100%);
+        }
+    }
+   
+    .banner-title{
+
+    }
+
+    .banner-subtitle{
+        line-height: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 4rem;
+        width: 4rem;
+        text-align: center;
+        position: absolute;
+        bottom: 10%;
+        right: 50%;
+        transform: translateX(-50%);
+        left: auto;
+        top: auto;
+        margin: 0 1.5rem;
+        z-index: 100;
+    }
+
+    .carousel-control-next {
+        right: 46%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 100;
+
+    }
+
+    .banner-caption {
+        background-color: $primary;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+        .banner-text {
+            padding-left: 3rem;
+
+            span {
+                border-bottom: 1px solid #fff;
+                display: inline-block;
+                padding-bottom: .25rem;
+                padding-right: .25rem;
+            }
+
+            .banner-subtitle {
+                line-height: 32px;
+            }
+
+        }
+    }
+
+    @include for-size(mobile) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            bottom: -2%;
+            left: 25%;
+        }
+
+        .carousel-control-next {
+            right: 0%;
+            left: auto;
+        }
+
+
+    }
+}

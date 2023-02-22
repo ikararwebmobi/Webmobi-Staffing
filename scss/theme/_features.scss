@@ -1,0 +1,154 @@
+.features-wrappper {
+    .features-item{
+        .feature-icon {
+            background-color: $light;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: $text-2xl;
+            position: relative;
+            z-index: 2; 
+            overflow: hidden; 
+            transition:  all 0.15s ease-in-out 0s;    
+            &::after{
+                content: "";
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: -1;
+                opacity: 0;
+                border-radius: 50%;
+                transform-origin:left  top;
+                transform: scale(0) translateX(-50%) translateY(-50%);
+                background-color: $primary;
+                transition:  all 0.5s ease-in-out 0s;
+            }
+        } 
+        &:hover{    
+            .feature-icon {       
+                color: $white;
+                &::after{
+                    opacity: 1;
+                    transform: scale(1) translateX(-50%) translateY(-50%);
+
+                }
+            }
+        }
+    }
+}
+
+.core-features-block {
+    margin-bottom: 1rem;
+
+    .card-core-features {
+        background-color: $primary;
+        border-radius: 1rem;
+        overflow: hidden;
+        &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background-color: rgba($dark, $alpha: .15);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform-origin: bottom left;
+            transform: scale(1) translateX(-100%) translateY(70%);
+            transition: all 0.85s ease-in-out 0s;
+            opacity: 1;
+        }
+
+        &:hover{
+
+
+            &::after {
+                transform: scale(2) translateX(100%) translateY(-100%);
+                opacity: 0;
+            }
+
+        }
+
+        .core-features-icon {
+            font-size: $text-6xl;
+            color: $white;
+
+            @include for-size(mobile) {
+                font-size: $text-4xl;
+            }
+        }
+
+        .features-icon-large {
+            position: absolute;
+            opacity: .15;
+            right: -40px;
+            bottom: 0;
+            font-size: 10rem;
+            color: $white;
+
+            @include for-size(mobile) {
+                font-size: 5rem;
+            }
+        }
+
+        .core-features-title {
+            max-width: 150px;
+
+            @include for-size(mobile) {
+                max-width: 100%;
+                font-size: $text-lg;
+            }
+        }
+
+        @include for-size(md) {
+            width: 300px;
+            max-width: 100%;
+            height: 240px;
+        }
+
+        @include for-size(mobile) {
+            height: 100%;
+        }
+    }
+
+    @include for-size(md) {
+        margin-bottom: 4.25rem;
+    }
+
+    &:nth-child(2) {
+        .card-core-features {
+            background-color: $success;
+        }
+
+        .card-core-features {
+            @include for-size(md) {
+                position: absolute;
+                top: -7.5rem;
+                right: 1rem;
+
+            }
+
+            @include for-size(lg) {
+                right: -5rem;
+
+            }
+        }
+
+
+
+    }
+
+    &:nth-child(3) {
+        .card-core-features {
+            background-color: $secondary;
+        }
+
+        @include for-size(md) {
+            margin-bottom: 0;
+        }
+
+    }
+}

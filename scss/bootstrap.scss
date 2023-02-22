@@ -1,0 +1,115 @@
+/*!
+ * Bootstrap v4.6.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+ $body-bg: #ffffff;
+ $body-color: #324050;
+ $primary: #00AEEF;
+ $secondary: #0050A3;
+ $dark: #101E2D;
+ $danger: #f85135;
+ $success: #70BF44;
+ $warning: #ff9800;
+ $info: #1c90d2;
+ $light: #B5C5D6;
+ $teal: #2fa584;
+ $white: #fff;
+ $gray-100: #a9a9a9;
+ $gray-600: #3a3a3a; 
+
+$font-family-sans-serif: -apple-system,
+BlinkMacSystemFont,
+"Poppins",
+"Segoe UI",
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+"Liberation Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+$font-size-base: 1rem !default;
+$yiq-contrasted-threshold: 160 !default;
+
+// Navs
+$nav-link-padding-y: .85rem;
+$navbar-nav-link-padding-x:.75rem;
+$nav-link-font-size: 1rem;
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $dark;
+$navbar-light-active-color: $dark;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+
+// Buttons
+
+$border-radius-md: .25rem !default;
+$btn-border-radius: $border-radius-md;
+$input-btn-font-size: 1rem;
+
+$btn-font-size: $input-btn-font-size;
+$btn-padding-y: .5rem;
+$btn-padding-x: .85rem;
+$btn-font-family: $font-family-sans-serif;
+$btn-font-weight: 600;
+
+$btn-padding-y-lg: .85rem;
+$btn-padding-x-lg: 3.5rem;
+$btn-font-size-lg: 1.15rem;
+
+// FORMS
+$input-color: $gray-100;
+$input-placeholder-color: $gray-100;
+$input-btn-font-size-sm: 1.25rem;
+$input-font-size: $input-btn-font-size-sm;
+$input-border-radius: $border-radius-md;
+
+// HEADING
+$headings-font-weight: 400 !default;
+$headings-line-height: 1.2 !default;
+$headings-color: $dark !default;
+
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+

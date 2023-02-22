@@ -1,0 +1,14 @@
+.services-wrappper .services-carousel-pagination .owl-dot {
+  padding: 0;
+  margin: 0 0.25rem 0 0;
+  background-color: transparent;
+  border: 0;
+}
+.services-wrappper .services-carousel-pagination .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}/*# sourceMappingURL=services.css.map */

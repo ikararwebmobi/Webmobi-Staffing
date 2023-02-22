@@ -1,0 +1,33 @@
+.clients-warp{
+    > div[class*="container"]{
+        position: relative; 
+       }  
+       .clients-module{
+        padding-top: 1rem;
+       .clients-box{
+        img{
+            width: 100%;
+            height: 60px;
+            object-fit: contain;
+        }
+    }
+}
+       @include for-size(lg){
+           .clients-module{
+               position: absolute;
+               width: 100%;
+               left: 15px;
+               top: -10.5rem;
+               .clients-box{
+                img{
+                    width: 100%;
+                    height: 60px;
+                    object-fit: cover;
+                }
+            }
+               
+           }
+       }
+
+
+}

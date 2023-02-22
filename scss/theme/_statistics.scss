@@ -1,0 +1,18 @@
+.statistics-wrappper{
+   background-color: $soft-light;
+   position: relative;
+   z-index: 2;
+   &::before{
+    content: "";
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 65%;
+    z-index: -1;
+   }
+    .statistics-module{
+        border-radius: .5rem;
+    }
+}   
