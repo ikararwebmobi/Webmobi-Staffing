@@ -89,7 +89,7 @@
 
                     &:before,
                     &:after {
-                        content: attr(data-title);
+                        content: attr(title);
                         position: absolute;
                         left: 0;
                         top: 0;
